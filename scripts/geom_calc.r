@@ -71,6 +71,9 @@ names(zora_m)[names(zora_m) == "footprintWKT.y"] <- 'footprintWKT'
 # reorder columns
 zora_m <- zora_m[,c("zodID", "order", "family", "subfamily", "genus", "specificEpithet", "scientificName", "taxonRank", "scientificNameAuthorship", "identificationQualifier", "originalNameUsage", "nomenclaturalStatus", "country", "locality", "verbatimElevation", "verbatimLatitude", "verbatimLongitude", "osmID", "decimalLatitude", "decimalLongitude", "coordinateUncertaintyInMeters", "habitat", "eventDate", "day", "month", "year", "organismRemarks", "typeStatus", "recordedBy", "identifiedBy", "associatedReferences", "taxonRemarks", "gbifID", "inatID", "georeferenceRemarks", "georeferenceSources", "georeferencedBy", "georeferencedDate", "polygon_fid", "footprintWKT")]
 
+# fill empty footprintWKT with MULTIPOLYGON EMPTY to make it valid
+zora_m$footprintWKT <- ifelse(is.na(zora_m$footprintWKT), "MULTIPOLYGON EMPTY", zora_m$footprintWKT)
+
 # write to file
 write.csv(zora_m, file = "zoraptera_occs.csv", row.names = FALSE, na = "")
 
