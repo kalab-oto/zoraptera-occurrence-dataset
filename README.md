@@ -4,6 +4,17 @@ The curated dataset of Zoraptera occurrences described in the paper "". The data
 ## How to cite:
 
 
+## Custom data fields:
+Besides fields defined by Darwin Core Standard (https://dwc.tdwg.org/list/), we added five custom fields:
+
+| Field name | Description                               |  
+|------------|-------------------------------------------|
+|zodID       | unique id of the record in the dataset    | 
+|osmID       | id of related OSM geometry                | 
+|polygon_fid | id of related polygon in `geom.gpkg` file | 
+|gbifID      | id of related GBIF record                 | 
+|inatID      | id of related iNaturalist record          | 
+
 ## Graphical data summary:
 ![Map of Zoraptera subfamilies](plots/zoraptera_map.png)
 *Geographical distribution of Zoraptera records in the dataset by subfamily*
