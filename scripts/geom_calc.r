@@ -74,6 +74,9 @@ zora_m <- zora_m[,c("zodID", "order", "family", "subfamily", "genus", "specificE
 # fill empty footprintWKT with MULTIPOLYGON EMPTY to make it valid
 zora_m$footprintWKT <- ifelse(is.na(zora_m$footprintWKT), "MULTIPOLYGON EMPTY", zora_m$footprintWKT)
 
+#order dataset by zodID
+zora_m <- zora_m[order(zora_m$zodID),]
+
 # write to file
 write.csv(zora_m, file = "zoraptera_occs.csv", row.names = FALSE, na = "")
 
