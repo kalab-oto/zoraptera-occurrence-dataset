@@ -1,0 +1,60 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite both the article from preferred-citation and the software itself."
+authors:
+- family-names: Kaláb
+  given-names: Oto
+  affiliation: Department of Physical Geography and Geoecology, Faculty of Science, University of Ostrava,
+  orcid: 0000-0003-3485-9377
+- family-names: Hoffmannova
+  given-names: Johana
+  affiliation: Department of Zoology, Faculty of Science, Palacky University,
+  orcid: 0000-0003-0216-6031
+- family-names: Packova
+  given-names: Gabriela
+  affiliation: Department of Zoology, Faculty of Science, Palacky University,
+  orcid: 0000-0001-7949-619X
+- family-names: Kočárková
+  given-names: Ivona
+  affiliation: Department of Biology and Ecology, Faculty of Science, University of Ostrava,
+  orcid: 0000-0002-8942-9481
+- family-names: Kundrata
+  given-names: Robin
+  affiliation: Department of Zoology, Faculty of Science, Palacky University,
+  orcid: 0000-0001-9397-1030
+- family-names: Kočárek
+  given-names: Petr
+  affiliation: Department of Biology and Ecology, Faculty of Science, University of Ostrava,
+  orcid: 0000-0002-1739-0143
+preferred-citation:
+  authors:
+    - family-names: Kaláb
+      given-names: Oto
+      affiliation: Department of Physical Geography and Geoecology, Faculty of Science, University of Ostrava,
+      orcid: 0000-0003-3485-9377
+    - family-names: Hoffmannova
+      given-names: Johana
+      affiliation: Department of Zoology, Faculty of Science, Palacky University,
+      orcid: 0000-0003-0216-6031
+    - family-names: Packova
+      given-names: Gabriela
+      affiliation: Department of Zoology, Faculty of Science, Palacky University,
+      orcid: 0000-0001-7949-619X
+    - family-names: Kočárková
+      given-names: Ivona
+      affiliation: Department of Biology and Ecology, Faculty of Science, University of Ostrava,
+      orcid: 0000-0002-8942-9481
+    - family-names: Kundrata
+      given-names: Robin
+      affiliation: Department of Zoology, Faculty of Science, Palacky University,
+      orcid: 0000-0001-9397-1030
+    - family-names: Kočárek
+      given-names: Petr
+      affiliation: Department of Biology and Ecology, Faculty of Science, University of Ostrava,
+      orcid: 0000-0002-1739-0143
+  title: "Curated global occurrence dataset of the insect order Zoraptera"
+  type: article
+title: "Zoraptera Occurrence Dataset"
+version: 1.0.0
+doi: 
+date-released: 
+type: dataset
