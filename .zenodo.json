@@ -1,0 +1,45 @@
+{
+    "title": "Zoraptera Occurrence Dataset",
+    "description": "<p>Zoraptera Occurrence Dataset - curated dataset of global occurrence records of Zoraptera. The dataset is stored in <code>zoraptera.csv</code> file, its based on Darwin Core standard, and is updated manually or by semi-automated workflow. For furhter details see <code>README.md</code>. </p><p> If you use this repository, please cite both the asociated paper and the version of data/repository itself.</p>",
+    "notes": "<p>This MIT licence apply on repository excluding single data records in the dataset. The license for each entry  (if applicable) is listed in column <code>licence</code> of the dataset and may be incompatible with MIT.</p><p> This research was supported by the Grant Agency of the Czech Republic (project No. 22-05024S; Evolution of angel insects (Zoraptera): from fossils and comparative morphology to cytogenetics and transcriptomes).</p>",
+    "upload_type": "dataset",
+    "license":"MIT",
+    "creators": [
+        {
+            "name": "Kaláb, Oto",
+            "affiliation": "Department of Physical Geography and Geoecology, Faculty of Science, University of Ostrava",
+            "orcid": "0000-0003-3485-9377"
+        },
+        {
+            "name": "Hoffmannova, Johana",
+            "affiliation": "Department of Zoology, Faculty of Science, Palacky University",
+            "orcid": "0000-0003-0216-6031"
+        },
+        {
+            "name": "Packova, Gabriela",
+            "affiliation": "Department of Zoology, Faculty of Science, Palacky University",
+            "orcid": "0000-0001-7949-619X"
+        },
+        {
+            "name": "Kočárková, Ivona",
+            "affiliation": "Department of Biology and Ecology, Faculty of Science, University of Ostrava",
+            "orcid": "0000-0002-8942-9481"
+        },
+        {
+            "name": "Kundrata, Robin",
+            "affiliation": "Department of Zoology, Faculty of Science, Palacky University",
+            "orcid": "0000-0001-9397-1030"
+        },
+        {
+            "name": "Kočárek, Petr",
+            "affiliation": "Department of Biology and Ecology, Faculty of Science, University of Ostrava",
+            "orcid": "0000-0002-1739-0143"
+        }
+    ],
+  "keywords": [
+      "zoraptera",
+      "occurrence",
+      "biogeography",
+      "entomology"
+    ]
+}  
