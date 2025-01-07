@@ -67,7 +67,7 @@ for (i in seq(nrow(inat_zor))) {
     
     inat_zor[i, names(taxon_info)] <- taxon_info
 }
-tail(inat_zor)
+
 # compare with current dataset
 zod <- read.csv("zoraptera_occs.csv")
 
