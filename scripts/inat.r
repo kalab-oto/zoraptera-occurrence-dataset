@@ -4,7 +4,9 @@ inat_zor <- get_inat_obs(taxon_id = 83200, maxresults = 10000)
 
 inat_zor <- inat_zor[inat_zor$license %in% c("CC-BY", "CC-BY-NC", "CC0"),]
 
-inat_zor <- inat_zor[,c("scientific_name", "latitude", "longitude", "url", "id", "observed_on", "public_positional_accuracy", "user_name")]
+inat_zor <- inat_zor[,c("scientific_name", "latitude", "longitude", "url", "id", "observed_on", "public_positional_accuracy", "user_name","license")]
+
+inat_zor$license <- gsub("-", "_", inat_zor$license)
 
 # for each record check if defined user (4936724 is Petr Kocarek) identified it, if so, add the name of the identifier and the scientific name
 inat_zor$rev_user <- NA
@@ -65,7 +67,7 @@ for (i in seq(nrow(inat_zor))) {
     
     inat_zor[i, names(taxon_info)] <- taxon_info
 }
-
+tail(inat_zor)
 # compare with current dataset
 zod <- read.csv("zoraptera_occs.csv")
 
