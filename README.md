@@ -4,7 +4,7 @@ The curated dataset of Zoraptera occurrences described in the paper "". The data
 ## How to cite:
 
 
-## Custom data fields:
+## Note on fields:
 Besides fields defined by Darwin Core Standard (https://dwc.tdwg.org/list/), we added five custom fields:
 
 | Field name | Description                               |  
@@ -14,6 +14,9 @@ Besides fields defined by Darwin Core Standard (https://dwc.tdwg.org/list/), we 
 |polygon_fid | id of related polygon in `geom.gpkg` file | 
 |gbifID      | id of related GBIF record                 | 
 |inatID      | id of related iNaturalist record          | 
+
+### Notice on WKT geometries in `footprintWKT` 
+Be aware that spreadsheet processors may have a limited number of characters per cell, and thus may trim values ​​that are too long. This may cause problem with `footprintWKT` column specifically when the user opens the data in software with a limited number of characters in cell value, then edits the data and saves the file. In such a case, longer WKT text may be truncated and the geometries may be invalidated. However, this will not affect the rest of the dataset and `footprintWKT` column can be easily restored from the original file, or recalculated runing `geom_calc.r`, which retrieve WKT geometries from `geom.gpkg`.
 
 ## Graphical data summary:
 ![Map of Zoraptera subfamilies](plots/zoraptera_map.png)
