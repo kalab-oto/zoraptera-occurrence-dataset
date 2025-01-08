@@ -4,9 +4,9 @@ The dataset is stored in `zoraptera.csv` file, its based on Darwin Core standard
 ## How to cite:
 If you use this repository, please cite both the asociated paper and the used version of data/repository itself.
 
-**Published data descriptor (in Review):**
+**Published data descriptor:**
 
-
+ _in review_
 
 **Last version of the dataset (1.0.0):**
 
