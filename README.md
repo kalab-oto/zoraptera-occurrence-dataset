@@ -1,8 +1,16 @@
 # Zoraptera Occurrence Dataset
-The curated dataset of Zoraptera occurrences described in the paper "". The dataset is stored in `zoraptera.csv` file, its based on Darwin Core standard, and  is updated manually or by semi-automated workflow described below.
+The dataset is stored in `zoraptera.csv` file, its based on Darwin Core standard, and is updated manually or by semi-automated [workflow](https://github.com/kalab-oto/zoraptera-occurrence-dataset/edit/main/README.md#dataset-update-workflow) described below.
 
 ## How to cite:
+If you use this repository, please cite both the asociated paper and the used version of data/repository itself.
 
+**Published data descriptor (in Review):**
+
+
+
+**Last version of the dataset (1.0.0):**
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13918821.svg)](https://doi.org/10.5281/zenodo.13918821)
 
 ## Note on fields:
 Besides fields defined by Darwin Core Standard (https://dwc.tdwg.org/list/), we added five custom fields:
