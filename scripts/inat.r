@@ -8,7 +8,19 @@ inat_zor <- inat_zor[,c("scientific_name", "latitude", "longitude", "url", "id",
 
 inat_zor$license <- gsub("-", "_", inat_zor$license)
 
-# for each record check if defined user (4936724 is Petr Kocarek) identified it, if so, add the name of the identifier and the scientific name
+# for each record check if dedicated users (e.g. 4936724 is Petr Kocarek) identified it, if so, add the name of the identifier and the scientific name. If there are more users, the last one is taken as the identifier.
+
+usr_df <- data.frame(
+    user_id = c(4936724),
+    user_name = c("pkocare1"),
+    real_name = c("Petr Kočárek")
+)
+
+# adding additional users - user ifnormation can be retrived from the specific inat records which was identified by the user for example:
+# obs_info <- get_inat_obs_id(175703579); obs_info$identifications$user[,c("id", "login","name")]
+ 
+# usr_df[nrow(usr_df) + 1,] <- list(3789298, "oto_kalab", "Oto Kaláb") # uncomment and use this to add another user
+
 inat_zor$rev_user <- NA
 inat_zor$taxonRank <- NA
 inat_zor$order <- "Zoraptera"
@@ -23,9 +35,9 @@ for (i in seq(nrow(inat_zor))) {
     id <- inat_zor$id[[i]]
     obs <- get_inat_obs_id(id)
 
-    if (4936724 %in% obs$identifications$user_id){
+    if (any(usr_df$user_id %in% obs$identifications$user_id)){
         ident <- obs$identifications
-        ident <- ident[obs$identifications$user_id == 4936724, ]
+        ident <- ident[obs$identifications$user_id %in% usr_df$user_id, ]
         id_rev <- ident[nrow(ident),]
         inat_zor$rev_user[i] <- id_rev$user$login
         inat_zor$scientific_name[i] <- id_rev$taxon$name
@@ -55,8 +67,9 @@ inat_zor$year <- as.numeric(format(inat_zor$eventDate, "%Y"))
 # remove records wheere the identifier is NA
 inat_zor <- inat_zor[!is.na(inat_zor$identifiedBy),]
 
-# rename user pkocare1 to Petr Kočárek
-inat_zor$identifiedBy <- ifelse(inat_zor$identifiedBy == "pkocare1", "Petr Kočárek", inat_zor$identifiedBy)
+# rename user to real name
+
+inat_zor$identifiedBy <- usr_df$real_name[match(inat_zor$identifiedBy, usr_df$user_name)]
 
 
 # fill taxons ranks of records
