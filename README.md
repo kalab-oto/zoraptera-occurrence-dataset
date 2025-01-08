@@ -62,3 +62,7 @@ If any new record without coordinates is added to the dataset, the coordinates a
 
 ## R
 - after any `geom/geom.gpkg` edit, the coordinates and positional uncertainty should be recalculated with `scripts/geom_calc.r` to write changes to `zoraptera_occs.csv`. Runnig `scripts/geom_calc.r` also recalculate the WKT geometries for `footprintWKT` column in the `zoraptera_occs.csv` dataset.
+
+
+> [!NOTE]
+> This MIT licence apply on repository excluding single data records in the dataset. The license for each entry (if applicable) is listed in column `licence` of the `zoraptera_occs.csv` dataset and may be incompatible with MIT. This research was supported by the Grant Agency of the Czech Republic (project No. 22-05024S; Evolution of angel insects (Zoraptera): from fossils and comparative morphology to cytogenetics and transcriptomes).
