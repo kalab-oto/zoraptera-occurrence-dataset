@@ -2,7 +2,7 @@
 
 `inat.r` - iNaturalist updates
 
-`geom_calc.r` - recalculate coordinates and uncertainty from geometry in `geom/geom.gpkg`
+`geom_calc.r` - retrieve WKT geometries, recalculate coordinates and uncertainty from geometry in `geom/geom.gpkg`
 
 `plot.r` - plots for publication and for graphical data summary in `README.md`
 
