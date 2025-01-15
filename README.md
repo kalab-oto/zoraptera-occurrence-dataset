@@ -9,6 +9,7 @@ If you use this repository, please cite both the asociated paper and the used ve
  _in review_
 
 **Last version of the dataset (1.1.0):**
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14652555.svg)](https://doi.org/10.5281/zenodo.14652555)
 
 ## Note on fields:
