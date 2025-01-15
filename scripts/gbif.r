@@ -59,4 +59,4 @@ if(length(new_ids) == 0) {
     write(log_entry, "data_update/update.log", append = TRUE)
 }
 
-capture.output(session_info(),file="session_info/gbif_session.txt")
+capture.output(devtools::session_info(),file="session_info/gbif_session.txt")

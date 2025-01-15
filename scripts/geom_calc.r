@@ -80,4 +80,4 @@ zora_m <- zora_m[order(zora_m$zodID),]
 # write to file
 write.csv(zora_m, file = "zoraptera_occs.csv", row.names = FALSE, na = "")
 
-capture.output(session_info(),file="session_info/geom_calc_session.txt")
+capture.output(devtools::session_info(),file="session_info/geom_calc_session.txt")

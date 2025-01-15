@@ -119,4 +119,4 @@ log_entry <- paste(current_date, source, sep = ",")
 
 write(log_entry, "data_update/update.log", append = TRUE)
 
-capture.output(session_info(),file="session_info/inat_session.txt")
+capture.output(devtools::session_info(),file="session_info/inat_session.txt")
