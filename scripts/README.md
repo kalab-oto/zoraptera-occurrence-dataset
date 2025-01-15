@@ -6,4 +6,4 @@
 
 `plot.r` - plots for publication and for graphical data summary in `README.md`
 
-`session_info.txt` - R session info for reproducibility
+`session_info/` - directody with separate R sessions info for reproducibility

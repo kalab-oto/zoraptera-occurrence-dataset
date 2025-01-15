@@ -88,3 +88,5 @@ ggplot(zod, aes(x = year)) +
 
 # write the histogram
 ggsave("plots/zoraptera_years.png", width = 10, height = 3, dpi = 100, bg = "white")
+
+capture.output(session_info(),file="session_info/plots_session.txt")
