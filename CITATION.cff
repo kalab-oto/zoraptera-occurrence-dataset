@@ -53,8 +53,20 @@ preferred-citation:
       orcid: 0000-0002-1739-0143
   title: "Curated global occurrence dataset of the insect order Zoraptera"
   type: article
+  database: DOI.org (Crossref)
+  issn: 2052-4463
+  issue: 1
+  journal: Sci Data
+  languages: en
+  pages: 360
+  volume: 12
+  url: https://www.nature.com/articles/s41597-025-04696-4
+  date-published: 2025-02-28
+  identifiers: 
+    - type: doi
+      value: 10.1038/s41597-025-04696-4
 title: "Zoraptera Occurrence Dataset"
-version: 1.0.0
+version: 1.1.0
 doi: 
 date-released: 
 type: dataset

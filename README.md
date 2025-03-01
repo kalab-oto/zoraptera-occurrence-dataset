@@ -6,7 +6,9 @@ If you use this repository, please cite both the asociated paper and the used ve
 
 **Published data descriptor:**
 
- _in review_
+[![DOI](https://img.shields.io/badge/DOI-10.1038/s41597--025--04696--4-68b308)](https://doi.org/10.1038/s41597-025-04696-4)
+
+Kaláb, O., Hoffmannova, J., Packova, G. et al. Curated global occurrence dataset of the insect order Zoraptera. Sci Data 12, 360 (2025). https://doi.org/10.1038/s41597-025-04696-4
 
 **Last version of the dataset (1.1.0):**
 
